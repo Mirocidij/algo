@@ -4,7 +4,7 @@
 
 https://leetcode.com/problems/reverse-linked-list/
 
-## Оптимальное решение которое работает за O(n) по времени и O(n) по памяти на Java
+## Оптимальное решение которое работает за O(n) по времени и O(1) по памяти на Java
 
 ```java
 class Solution {
