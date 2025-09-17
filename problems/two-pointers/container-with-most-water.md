@@ -1,10 +1,6 @@
 # Самый большой контейнер
 
-#two-pointers
-
-#средне
-
-#яндекс
+#two-pointers #средне #яндекс
 
 ### Условие
 
@@ -40,7 +36,6 @@ public class Solution {
     public int maxArea(List<Integer> height) {
         int p1 = 0, p2 = height.size() - 1;
         int max = 0;
-
         while (p1 < p2) {
             int curSum = (p2 - p1) * Math.min(height.get(p1), height.get(p2));
             max = Math.max(max, curSum);
@@ -50,7 +45,6 @@ public class Solution {
                 p1++;
             }
         }
-
         return max;
     }
 }
