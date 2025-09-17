@@ -37,12 +37,27 @@
 import java.util.*;
 
 public class Solution {
+    public List<Integer> twoSum(List<Integer> nums, int target) {
+        int p1 = 0, p2 = nums.size() - 1;
+        int currSum = 0;
+        while (p1 < p2) {
+            currSum = nums.get(p1) + nums.get(p2);
+            if (currSum == target) {
+                return List.of(p1 + 1, p2 + 1);
+            } else if (currSum > target) {
+                p2--;
+            } else {
+                p1++;
+            }
+        }
 
-    public List<Integer> twoSum(List<Integer> nums, int target) {
-
-    }
-
+        return List.of(-1, -1);
+    }
 }
 ```
 
+Решено с первой попытки.
+
 ### Ошибки
+
+Ошибок при сдаче не было.
