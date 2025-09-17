@@ -36,36 +36,21 @@
 import java.util.*;
 
 public class Solution {
-
-    public List<Integer> sortedSquares(List<Integer> nums) {
-
-        var result = new ArrayList<Integer>(nums.size());
-
-        int p1 = 0, p2 = nums.size() - 1;
-
-        while (p1 <= p2) {
-
-            if (Math.abs(nums.get(p1)) > Math.abs(nums.get(p2))) {
-
-                result.add(nums.get(p1) * nums.get(p1));
-
-                p1++;
-
-            } else {
-
-                result.add(nums.get(p2) * nums.get(p2));
-
-                p2--;
-
-            }
-
-        }
-
-        Collections.reverse(result);
-
-        return result;
-
-    }
+    public List<Integer> sortedSquares(List<Integer> nums) {
+        var result = new ArrayList<Integer>(nums.size());
+        int p1 = 0, p2 = nums.size() - 1;
+        while (p1 <= p2) {
+            if (Math.abs(nums.get(p1)) > Math.abs(nums.get(p2))) {
+                result.add(nums.get(p1) * nums.get(p1));
+                p1++;
+            } else {
+                result.add(nums.get(p2) * nums.get(p2));
+                p2--;
+            }
+        }
+        Collections.reverse(result);
+        return result;
+    }
 
 }
 ```
@@ -80,37 +65,21 @@ public class Solution {
 import java.util.*;
 
 public class Solution {
-
-    public List<Integer> sortedSquares(List<Integer> nums) {
-
-        var result = new ArrayList<Integer>(nums.size());
-
-        int p1 = 0, p2 = nums.size() - 1;
-
-        while (p1 <= p2) {
-
-            if (Math.abs(nums.get(p1)) > Math.abs(nums.get(p2))) {
-
-                result.add(nums.get(p1) * nums.get(p1));
-
-                p1++;
-
-            } else {
-
-                result.add(nums.get(p2) * nums.get(p2));
-
-                p2--;
-
-            }
-
-        }
-
-        Collections.revert(result);
-
-        return result;
-
-    }
-
+    public List<Integer> sortedSquares(List<Integer> nums) {
+        var result = new ArrayList<Integer>(nums.size());
+        int p1 = 0, p2 = nums.size() - 1;
+        while (p1 <= p2) {
+            if (Math.abs(nums.get(p1)) > Math.abs(nums.get(p2))) {
+                result.add(nums.get(p1) * nums.get(p1));
+                p1++;
+            } else {
+                result.add(nums.get(p2) * nums.get(p2));
+                p2--;
+            }
+        }
+        Collections.revert(result);
+        return result;
+    }
 }
 ```
 
