@@ -72,6 +72,51 @@ public class Solution {
 
 Сдано со второй попытки
 
+Эталонным решением считается что-то вроде этого
+
+```java
+import java.util.*;
+
+// time: O(n+m)
+// space: O(n+m)
+// [1,3,5]
+//        ↑
+// [2,4,6]
+//      ↑
+// [1,2,3,4,5]
+public class Solution {
+    public List<Integer> findDifference(List<Integer> nums1, List<Integer> nums2) {
+        int p1 = 0, p2 = 0;
+        var result = new ArrayList<Integer>();
+        while (p1 < nums1.size() || p2 < nums2.size()) {
+            if (p1 >= nums1.size()) {
+                result.add(nums2.get(p2));
+                p2++;
+                continue;
+            }
+            if (p2 >= nums2.size()) {
+                result.add(nums1.get(p1));
+                p1++;
+                continue;
+            }
+
+            if (nums1.get(p1) < nums2.get(p2)) {
+                result.add(nums1.get(p1));
+                p1++;
+            } else if (nums1.get(p1) > nums2.get(p2)) {
+                result.add(nums2.get(p2));
+                p2++;
+            } else {
+                p1++;
+                p2++;
+            }
+        }
+        
+        return result;
+    }
+}
+```
+
 ### Ошибки
 
 #### Fail 1
