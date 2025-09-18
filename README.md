@@ -12,7 +12,11 @@
 
 ## Задачи, которые в итоге решились, но не с первой попытке неплохо перерешать
 
-Valid palindrome [[valid-palindrome]]  с 4 блин
-Sort array of squares [[sort-array-of-squares]] со второй
-Reverse string [[reverse-string]] со второй
-[[intersection-of-sorted-arrays]] со 2 блин)
+
+- Решить 24.09.2025
+    Valid palindrome [[valid-palindrome]]  с 4 блин
+    Sort array of squares [[sort-array-of-squares]] со второй
+    Reverse string [[reverse-string]] со второй
+    [[intersection-of-sorted-arrays]] со 2 блин)
+- Решить 25.09.2025
+	[[symmetric-difference]] со 2 попытки
